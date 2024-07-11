@@ -1,2 +1,2 @@
 # students_diplomado_data_science_fmat
-Repository to save the names of all students in each data science course
+Repository to track the progress of all students in the introduction to data science course
