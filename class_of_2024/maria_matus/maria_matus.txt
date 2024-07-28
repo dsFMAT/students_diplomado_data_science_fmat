@@ -1,1 +1,1 @@
-GitHub es importante ya que podemos hacer una colaboración entre colegas, nos permite trabajar en simultáneo en un directorio local, posteriormente guardar cambios al directorio remoto, revisando previamente los cambios. 
+GitHub es importante ya que podemos hacer una colaboración entre colegas, nos permite trabajar en simultáneo en un directorio local, posteriormente guardar cambios al directorio remoto, revisando previamente los cambios.
