@@ -1,0 +1,163 @@
+---
+title: "Vectores - Ejercicio"
+output:
+  html_notebook:
+    df_print: paged
+  html_document:
+    df_print: paged
+---
+
+# Instrucciones:
+
+**Asegúrate de estar parado en el archivo `/home/ds_fmat/students_diplomado_data_science_fmat/class_of_2024/<tu-carpeta>/0002_Vectores_03_Ejercicio.Rmd`**
+
+- En **caso contrario** sigue las instrucciones del archivo `/home/ds_fmat/introduction_to_r/0002_Vectores_02_Instrucciones.Rmd` y posteriormente abre el archivo `/home/ds_fmat/students_diplomado_data_science_fmat/class_of_2024/<tu-carpeta>/0002_Vectores_03_Ejercicio.Rmd`
+
+# Sacando *"jugo"* y pronósticos con las Olimpiadas
+
+Imagina que para las Olimpiadas de Paris 2024 construiste una serie de modelos de ML para predecir los resultados de algunos deportes y, confiado, apostaste durante una semana en ellos.
+
+En miras de analizar bien tus primeros resultados, recopilemos los datos que generaste
+
+Para `acuaticos_vector`: 
+
+- Lunes ganaste $140
+- Martes perdiste $50
+- Miércoles ganaste $20 
+- Jueves perdiste $120
+- Viernes ganaste $240
+
+Para `tenis_vector`: 
+
+- Lunes perdiste $24
+- Martes perdiste $50
+- Miércoles ganaste $100
+- Jueves perdiste $350
+- Viernes ganaste $10
+
+
+Ahora bien, crea un vector llamado `acuaticos_vector` para apuntar en él las ganancias y pérdidas que tuviste en los deportes acuáticos y otro vector llamado `tenis_vector` para hacer lo propio con tus proyecciones del tenis.
+
+
+```{r}
+# Escribe aquí tu resultado...
+acuaticos_vector <-c(140,-50,20,-120,240)
+acuaticos_vector
+
+```
+
+
+```{r}
+# Escribe aquí tu resultado...
+tenis_vector <-c(-24,-50,100,-350,10)
+tenis_vector
+
+```
+
+Ahora bien, recordemos que podemos dar nombres de los días de la semana a cada uno de los vectores que estamos utilizando para nuestras ganancias en los deportes acuáticos y para el tenis.
+
+
+Hagámoslo de lunes a viernes y todo en minúscula para evitar problemas.
+
+```{r}
+# Escribe aquí tu resultado...
+names(acuaticos_vector)<-c("lunes","martes","miercoles","jueves","viernes")
+names(tenis_vector)<-c("lunes","martes","miercoles","jueves","viernes")
+acuaticos_vector
+tenis_vector
+```
+
+## Calculando el total de ganancias
+
+Ya podemos hacer algunos análisis con nuestros datos. Entendamos por **"profit"** la suma de todo lo recaudado: lo ganado (en positivo) más lo perdido (en negativo).
+
+- Calcula un vector con el *profit* total de cada día (considerando ambos tipos de deportes)
+
+```{r}
+# Escribe aquí tu resultado...
+profit<-acuaticos_vector+tenis_vector
+profit
+
+```
+
+- Calcula el *profit* total (una cifra donde se considere todos los días y ambos deportes)
+
+```{r}
+# Escribe aquí tu resultado...
+sum(profit)
+
+```
+
+
+- Cuál es el *profit* total en deportes acuáticos?
+
+```{r}
+# Escribe aquí tu resultado...
+sum(acuaticos_vector)
+
+```
+
+
+- Cuál es el *profit* total en el tenis?
+
+```{r}
+# Escribe aquí tu resultado...
+sum(tenis_vector)
+
+```
+
+- Utilizando los operadores lógicos aplicados a vectores, determina los días en los que sólo ha habido ganancias en los deportes acuáticos
+
+```{r}
+# Escribe aquí tu resultado...
+acuaticos_vector[acuaticos_vector>0]
+
+```
+
+
+- Utilizando los operadores lógicos aplicados a vectores, determina los días en los que sólo ha habido ganancias en tenis
+
+```{r}
+# Escribe aquí tu resultado...
+tenis_vector[tenis_vector>0]
+
+```
+
+
+
+- Cuál es el promedio de profit en acuáticos?
+
+```{r}
+# Escribe aquí tu resultado...
+mean(acuaticos_vector)
+
+```
+
+- Cuál es el promedio de profit en total?
+
+```{r}
+# Escribe aquí tu resultado...
+mean(profit)
+
+```
+
+- Tomando únicamente los días donde hubo ganancias, cuál es el promedio de ganancias en el tenis?
+
+```{r}
+# Escribe aquí tu resultado...
+tenis_vector[tenis_vector>0]
+mean(tenis_vector[tenis_vector>0])
+
+```
+
+
+# Una vez que hayas terminado...
+
+## Sube tus cambios: add, commit y push 
+- Recuerda estar ubicado en `/home/ds_fmat/students_diplomado_data_science_fmat/class_of_2024/`
+- Rectifica que estés en `<tu-rama>` y, desde la pestaña **Terminal** sube tus cambios:
+  - `git status`
+  - `git add 0002_Vectores_03_Ejercicio.Rmd`
+  - `git commit -m "<Agrega tus comentarios>"`
+  - `git push` ó `git push origin <tu-rama>`
+- Dirígete al [repositorio](https://github.com/dsFMAT/students_diplomado_data_science_fmat) y crea tu [Pull Request](https://github.com/dsFMAT/students_diplomado_data_science_fmat/compare)
