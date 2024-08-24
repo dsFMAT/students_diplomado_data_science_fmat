@@ -21,13 +21,11 @@ El objetivo de este challenge es evaluarte en:
     
     - Métricas por grupos (`groupby`)
     
-    - etc etc
-    
-    - Utilizando lo visto en las clases de **Python**
+    - En general, utilizando lo visto en las clases de **Python**
     
 - Demostrar conocimiento de las operaciones realizadas.
 
-- Realizar ***feature engineering*** (AGUAS con el **leagake**!)
+- Realizar ***feature engineering*** (AGUAS con el **leakage**!)
 
 - Entrenar un Modelo de Clasificación Binaria sencillo... el desempeño del modelo no es importante para la calificación pero sí la creatividad y habilidad para obtener una base de desarrollo (base de entrenamiento) con features *"buenas"* de cara a la variable objetivo
 
@@ -52,7 +50,7 @@ Para este trabajo, necesitas hacer lo equivalente utilizando, al menos, las tabl
 
 - `Player_Attributes`
 
-En estas tablas también **hay datos anclados al tiempo**, por lo que el cuidado para **evitar el leagake** al momento de crear features e incluirlas al entrenamiento **es fundamental**.
+En estas tablas también **hay datos anclados al tiempo**, por lo que el cuidado para **evitar el leakage** al momento de crear features e incluirlas al entrenamiento **es fundamental**.
 
 > **Recomendación** para una base más robusta: Pega la tabla que ya tenemos de la clase (la que hicimos con partidos y atributos de equipos) con la tabla nueva que generes (partidos + atributos de jugadores) para una base de entrenamiento más capaz de identificar patrones.
 
@@ -62,13 +60,13 @@ En estas tablas también **hay datos anclados al tiempo**, por lo que el cuidado
 - **Toma todo lo que sientas que te pueda servir de los Notebooks y archivos de las clases e incorpóralo a tu análisis!**
 
 # Formato de presentación
-Siéntete libre de presentar tu trabajo desde un Jupyter Notebook. Si quisieras utilizar otro formato, es bien recibo siempre y cuando tu código esté disponible para revisarlo y comentarlo.
+Siéntete libre de presentar tu trabajo desde un Jupyter Notebook. Si quisieras utilizar otro formato, es bien recibido siempre y cuando tu código esté disponible para revisarlo y comentarlo.
 
 Respecto a esto, te(les) pedimos que **suban todos sus archivos al repositorio `students_diplomado_data_science_fmat`** de la siguiente forma:
 
 - **Crear una carpeta** con su número/nombre de equipo dentro de la ubicación **`students_diplomado_data_science_fmat/class_of_2024/Proyectos/Modulo_01/`**
 
-- Copiar allí todoslos archivos generados.
+- Copiar allí todos los archivos generados.
 
 -  `git add`, `git commit` & `git push` desde una rama nueva (del equipo).
   
