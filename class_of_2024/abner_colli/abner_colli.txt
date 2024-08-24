@@ -1,0 +1,2 @@
+Es una herramienta importante para poder colaborar y compartir 
+código de manera ordenada, tambien importante para mantener el historico y versionado del código.
