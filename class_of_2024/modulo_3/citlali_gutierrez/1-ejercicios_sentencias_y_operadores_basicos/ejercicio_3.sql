@@ -1,0 +1,1 @@
+SELECT title AS Titulo,(rental_rate*1.16) AS Total_Rental_Rate FROM film WHERE rental_rate <= 2
