@@ -1,0 +1,1 @@
+SELECT rating, max(length), min(length) FROM film GROUP BY rating 

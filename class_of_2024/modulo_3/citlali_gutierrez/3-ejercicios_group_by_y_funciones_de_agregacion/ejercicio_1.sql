@@ -1,0 +1,1 @@
+SELECT rating, AVG(rental_rate) FROM film GROUP BY rating  
