@@ -4,10 +4,10 @@
 --- de agregación.
 
 
-select date_trunc('month', r.rental_date) as month, count(f.film_id) 
+SELECT date_trunc('month', r.rental_date) AS month, count(f.film_id) 
 FROM film f
 LEFT JOIN inventory i ON i.film_id = i.film_id 
 LEFT JOIN rental r ON r.inventory_id = i.inventory_id 
 WHERE rental_date >= (CURRENT_DATE - INTERVAL '20 years')
-group by date_trunc('month', r.rental_date)
-order by date_trunc('month', r.rental_date) desc 
+GROUP BY date_trunc('month', r.rental_date)
+ORDER BY date_trunc('month', r.rental_date) DESC

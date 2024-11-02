@@ -10,7 +10,7 @@
 --- Usa la función CASE para realizar esta clasificación y mostrar las películas que pertenecen a cada categoría.
 
 
-select distinct f.title, p.amount, f.length,
+SELECT DISTINCT f.title, p.amount, f.length,
 		CASE
 			WHEN p.amount <=2 AND f.length < 60 THEN 'Económica y Corta'
 			WHEN p.amount <=2 AND f.length >=60 THEN 'Económica y Larga'
@@ -19,9 +19,9 @@ select distinct f.title, p.amount, f.length,
 			else 'Otros'
 		end as Categoria
 FROM film f
-LEFT JOIN inventory i ON i.film_id = i.film_id 
+LEFT JOIN inventory i ON i.film_id = f.film_id 
 LEFT JOIN rental r ON r.inventory_id = i.inventory_id 
 LEFT JOIN payment p ON r.customer_id = p.customer_id 
-limit 100
 
---- Nota: Le puse que solo imprima los primeros 100 ya que al poner distinct (pues hay repetidos), tardaba demasiado en realizarlo.
+
+# Nota: Le puse DISTINCT, ya que había filas repetidas.
