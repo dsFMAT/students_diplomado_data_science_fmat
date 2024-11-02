@@ -1,0 +1,4 @@
+SELECT title AS titulo
+FROM film
+WHERE rental_rate = 4.99
+
