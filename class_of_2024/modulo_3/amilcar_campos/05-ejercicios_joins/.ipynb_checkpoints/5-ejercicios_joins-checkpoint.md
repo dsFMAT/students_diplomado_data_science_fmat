@@ -1,4 +1,4 @@
-# Ejercicios Having
+# Ejercicios join
 
 Estos Ejercicios deben de subirse en esta misma carpeta a través de un pull request en el cual este ejercicio será calificado. Por favor, haz el merge en cuanto el ejercicio sea calificado y el pull request sea aprobado 
 
