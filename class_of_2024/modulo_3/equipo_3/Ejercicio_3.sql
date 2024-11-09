@@ -1,7 +1,7 @@
 WITH PagosPeliculas AS (
     SELECT
-        f.title AS "Pelicula",
-        SUM(p.amount) AS "Ingreso"
+        f.title AS Pelicula,
+        SUM(p.amount) AS Ingreso
     FROM film f
     INNER JOIN inventory i ON f.film_id = i.film_id
     INNER JOIN rental r ON i.inventory_id = r.inventory_id
@@ -9,8 +9,8 @@ WITH PagosPeliculas AS (
     GROUP BY f.title
 )
 SELECT
-    "Pelicula",
-    "Ingreso"
+    Pelicula,
+    Ingreso
 FROM PagosPeliculas
-WHERE "Ingreso" <= 50
-ORDER BY "Pelicula"
+WHERE Ingreso <= 50
+ORDER BY Pelicula ASC
