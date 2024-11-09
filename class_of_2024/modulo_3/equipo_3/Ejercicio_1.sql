@@ -17,6 +17,6 @@ JOIN
 GROUP BY 
     c.name, DATE_TRUNC('month', p.payment_date)
 HAVING 
-    SUM(p.amount) > 0
+    SUM(p.amount) > 200
 ORDER BY 
     ingreso_total_mensual DESC;
